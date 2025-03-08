@@ -11,6 +11,7 @@ import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import Servicios from '~/components/widgets/Servicios.astro';
 
 const metadata = {
   title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
@@ -35,18 +36,16 @@ const metadata = {
     image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
   >
     <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white highlight"> Astro 5.0</span> + Tailwind CSS
+      Creamos marcas <span class="hidden xl:inline">que conectan </span>
+      <span class="text-accent dark:text-white highlight"> emocionalmente</span>
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 5.0
-        + Tailwind CSS.</span
+        Somos una agencia de publicidad especializada en la creación de marcas digitales.</span
       >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
-      Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages &
-      Blogs.
+      <!-- <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span> -->
+      Transformamos tu marca en una experiencia que resuena con tu audiencia y genera conexiones duraderas.
     </Fragment>
   </Hero>
 
@@ -56,46 +55,46 @@ const metadata = {
 
   <!-- Features Widget *************** -->
 
-  <Features
-    id="features"
-    tagline="Features"
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022, 2023 and 2024."
+  <Servicios
+    id="Servicios"
+    tagline="Servicios"
+    title="Nuestros Servicios"
+    subtitle="Ofrecemos soluciones integrales de comunicación y marketing para potenciar tu marca en todos los canales."
     items={[
       {
-        title: 'Astro + Tailwind CSS Integration',
+        title: 'Diseño de Identidad',
         description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
+          'Creamos identidades visuales que transmiten la esencia de tu marca y conectan emocionalmente con tu audiencia.',
         icon: 'tabler:brand-tailwind',
       },
       {
-        title: 'Ready-to-use Components',
+        title: 'Campañas Publicitarias',
         description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
+          'Desarrollamos campañas creativas y estratégicas que generan impacto y resultados medibles para tu negocio.',
         icon: 'tabler:components',
       },
       {
-        title: 'Best Practices',
+        title: 'Marketing Digital',
         description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
+          'Estrategias digitales personalizadas que aumentan tu visibilidad online y generan conversiones efectivas.',
         icon: 'tabler:list-check',
       },
       {
-        title: 'Excellent Page Speed',
+        title: 'Producción Audiovisual',
         description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
+          'Contenido audiovisual de alta calidad que cuenta historias memorables y refuerza el mensaje de tu marca.',
         icon: 'tabler:rocket',
       },
       {
-        title: 'Search Engine Optimization (SEO)',
+        title: 'Diseño Web',
         description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
+          'Sitios web atractivos y funcionales que ofrecen experiencias de usuario excepcionales y convierten visitantes en clientes.',
         icon: 'tabler:arrows-right-left',
       },
       {
-        title: 'Open to new ideas and contributions',
+        title: 'Social Media',
         description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
+          'Gestión estratégica de redes sociales para construir comunidades comprometidas alrededor de tu marca.',
         icon: 'tabler:bulb',
       },
     ]}
@@ -105,23 +104,23 @@ const metadata = {
 
   <Content
     isReversed
-    tagline="Inside template"
-    title="AstroWind's Blueprint: Fun Meets Functionality!"
+    tagline="Branding Emocion"
+    title="¡Donde la Creatividad Encuentra Resultados!"
     items={[
       {
-        title: 'Built on top of Astro 5.0',
+        title: 'Enfoque integral multiplataforma',
         description:
-          'Benefiting from the performance and developer-friendly features of this modern static site generator.',
+          'Garantizamos que tu marca se vea y funcione perfectamente en todos los canales, desde impresos tradicionales hasta las últimas plataformas digitales.',
       },
       {
-        title: 'Styled using Tailwind CSS',
+        title: 'Diseño creativo de vanguardia',
         description:
-          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
+          'Utilizamos las últimas tendencias en diseño gráfico y herramientas digitales para crear identidades visuales impactantes y memorables',
       },
       {
-        title: 'Cross-browser compatibility',
+        title: 'Enfoque integral multiplataforma',
         description:
-          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
+          'Garantizamos que tu marca se vea y funcione perfectamente en todos los canales, desde impresos tradicionales hasta las últimas plataformas digitales.',
       },
     ]}
     image={{
@@ -130,8 +129,11 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
-      Gain a competitive advantage by incorporating industry leading practices
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Construyendo marcas con impacto
+      </h3>
+      Obtén una ventaja competitiva incorporando estrategias emocionales que conectan con tu audiencia y generan resultados
+      medibles para tu negocio.
     </Fragment>
 
     <Fragment slot="bg">
@@ -141,7 +143,7 @@ const metadata = {
 
   <!-- Content Widget **************** -->
 
-  <Content
+  <!-- <Content
     isAfterContent
     items={[
       {
@@ -174,11 +176,11 @@ const metadata = {
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Content>
+  </Content> -->
 
   <!-- Content Widget **************** -->
 
-  <Content
+  <!-- <Content
     isReversed
     isAfterContent
     items={[
@@ -212,33 +214,33 @@ const metadata = {
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Content>
+  </Content> -->
 
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="Get your dream website up and running in no time with AstroWind."
+    title="Transforma tu marca en una experiencia memorable"
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Download</span>',
+        title: 'Paso 1: <span class="font-medium">Descubre</span>',
         description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
+          'Comenzamos con una consulta detallada para entender tu visión, objetivos y valores de marca. Tu historia es única, y queremos capturar su esencia.',
         icon: 'tabler:package',
       },
       {
-        title: 'Step 2: <span class="font-medium">Add content</span>',
+        title: 'Paso 2: <span class="font-medium">Crea</span>',
         description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
+          'Nuestro equipo creativo desarrolla conceptos visuales y estrategias de comunicación que conectan emocionalmente con tu audiencia ideal.',
         icon: 'tabler:letter-case',
       },
       {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
+        title: 'Paso 3: <span class="font-medium">Implementa</span>',
         description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
+          'Llevamos tu marca a todos los canales relevantes, asegurando una presencia consistente y profesional que genera impacto.',
         icon: 'tabler:paint',
       },
       {
-        title: 'Ready!',
+        title: 'Listo!',
         icon: 'tabler:check',
       },
     ]}
@@ -250,7 +252,7 @@ const metadata = {
 
   <!-- Features2 Widget ************** -->
 
-  <Features2
+  <!-- <Features2
     title="Most used widgets"
     subtitle="Provides frequently used components for building websites using Tailwind CSS"
     tagline="Components"
@@ -310,7 +312,7 @@ const metadata = {
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Features2>
+  </Features2> -->
 
   <!-- HighlightedPosts Widget ******* -->
 
@@ -365,18 +367,18 @@ const metadata = {
 
   <!-- Stats Widget ****************** -->
 
-  <Stats
+  <!-- <Stats
     stats={[
       { title: 'Downloads', amount: '132K' },
       { title: 'Stars', amount: '24.8K' },
       { title: 'Forks', amount: '10.3K' },
       { title: 'Users', amount: '48.4K' },
     ]}
-  />
+  /> -->
 
   <!-- CallToAction Widget *********** -->
 
-  <CallToAction
+  <!-- <CallToAction
     actions={[
       {
         variant: 'primary',
@@ -395,5 +397,5 @@ const metadata = {
       Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
       waste more time! :P
     </Fragment>
-  </CallToAction>
+  </CallToAction> -->
 </Layout>
